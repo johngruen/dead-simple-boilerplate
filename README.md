@@ -1,8 +1,5 @@
 Just enough bang out quick prototypes without having to start from scratch.
 
-
-Uses [Harp](http://harpjs.com/)
-
 ## Get Started  
 ```
 npm i -g harp  
