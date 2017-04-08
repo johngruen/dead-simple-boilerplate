@@ -16,6 +16,21 @@ cd myproject
 harp server
 ```
 
+## Live Reloading
+
+Harp doesn't support livereload out of the box. There are lots of other ways to run livereload, but i tend to just use browser-sync:
+
+```
+// if you don't already have it
+npm i -g browser-sync
+
+// in a new terminal window, after you've started the harp server:
+browser-sync start --proxy 'localhost:9000' --files '**'
+```
+
+The double asterisk is a globbing pattern that selects all files in all directories being served by Harp on port 9000, you can use a more specific pattern if needed.
+
+
 ## Directory Structure
 
 ```
