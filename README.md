@@ -5,10 +5,14 @@ I put this repo together because I wanted the quickest method I could think of t
 You'll need [node](https://nodejs.org/en/) to do the following:  
 
 ```
-npm i -g harp  // only do this if you don't already have harp installed
+// only do this if you don't already have harp installed
+
+npm i -g harp
 
 // change 'myproject' to whatever you want your thing to be called
+
 harp init myproject --boilerplate johngruen/dead-simple-boilerplate
+cd myproject
 harp server
 ```
 
