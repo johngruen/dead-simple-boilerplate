@@ -1,0 +1,19 @@
+// Sets up some global rules
+// that make styles more reasonable
+// sets global border box
+// and zeroes default padding/margining.
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
