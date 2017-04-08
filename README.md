@@ -13,22 +13,17 @@ npm i -g harp
 
 harp init myproject --boilerplate johngruen/dead-simple-boilerplate
 cd myproject
-harp server
+npm i // only do this the first time you start
+npm run dev
 ```
+
+This will spin up a harp server at port 9000, and a livereloading server at port 3000.
 
 ## Live Reloading
 
-Harp doesn't support livereload out of the box. There are lots of other ways to run livereload, but i tend to just use browser-sync:
+Harp doesn't support livereload out of the box. This project uses browser-sync in the `npm run dev` command to handle livereloading.
 
-```
-// if you don't already have it
-npm i -g browser-sync
-
-// in a new terminal window, after you've started the harp server:
-browser-sync start --proxy 'localhost:9000' --files '**'
-```
-
-The double asterisk is a globbing pattern that selects all files in all directories being served by Harp on port 9000, you can use a more specific pattern if needed.
+The double asterisk is a globbing pattern selects all files in all directories being served by Harp on port 9000, you can use a more specific pattern if needed.
 
 
 ## Directory Structure
@@ -36,6 +31,7 @@ The double asterisk is a globbing pattern that selects all files in all director
 ```
 ├── README.md
 ├── harp.json // put data in here, harp will pipe it around
+├── package.json // describes the project for node
 └── public // served content
     ├── _layout.jade // root layout thing
     ├── index.jade // your index
