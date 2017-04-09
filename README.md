@@ -1,3 +1,5 @@
+# Dead Simple Boilerplate
+
 I put this repo together because I wanted the quickest method I could think of to  prototype *Look and Feel* design ideas in code. There's no linting, and the build toolchain is buried in [Harpjs](http://harpjs.com/) so you're not tempted to fuss with or optimize webpack or gulp config for hours before getting into code.
 
 ## Get Started
