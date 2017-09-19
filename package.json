@@ -5,10 +5,15 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.18.8"
+    "browser-sync": "^2.18.8",
+    "eslint": "^4.7.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0"
   },
   "scripts": {
-    "dev": "harp server --port 9000 & browser-sync start --proxy 'localhost:9000' --files '**' --no-notify"
+    "dev": "harp server --port 9000 & browser-sync start --proxy 'localhost:9000' --files '**' --no-notify",
+    "lint:sass": "sass-lint -v -q",
+    "lint": "eslint ./public/scripts/main.js"
   },
   "repository": {
     "type": "git",

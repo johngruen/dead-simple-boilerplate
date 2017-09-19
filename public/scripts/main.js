@@ -1,3 +1,1 @@
-$(() => {
-  console.log('hey');
-});
+$(() => { /* Do stuff here */ });

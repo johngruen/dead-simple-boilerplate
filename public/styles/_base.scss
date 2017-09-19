@@ -1,0 +1,115 @@
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+  }
+}
+
+*,
+fieldset,
+figure,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  @include respond-to('not-small') {
+    font-size: 75%;
+  }
+
+  @include respond-to('small') {
+    font-size: 62.5%;
+  }
+
+  box-sizing: border-box;
+
+}
+
+body {
+  color: black;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.4;
+}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  letter-spacing: -.1rem;
+}
+
+h1 {
+  font-size: 4.6rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.6rem;
+  letter-spacing: -.08rem;
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: 1.8rem;
+  letter-spacing: -.05rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+blockquote {
+  padding: 1.5rem;
+}
+
+dl,
+ol,
+ul {
+  margin: 0 0 2rem 1.5rem;
+
+  dl,
+  ol,
+  ul {
+    font-size: 90%;
+    margin: 1.5rem 0 1.5rem 3rem;
+  }
+
+  li {
+    margin-bottom: .5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

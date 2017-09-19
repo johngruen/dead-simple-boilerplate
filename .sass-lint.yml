@@ -1,0 +1,7 @@
+files:
+  include: ./public/styles/**/*.scss
+rules:
+  class-name-format:
+    - 1
+    - convention: hyphenatedbem
+  placeholder-in-extend: 0
