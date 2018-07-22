@@ -11,7 +11,7 @@
     "eslint-plugin-import": "^2.7.0"
   },
   "scripts": {
-    "dev": "harp server --port 9000 & browser-sync start --proxy 'localhost:9000' --files '**' --no-notify",
+    "dev": "harp server --port 9000 & browser-sync start --proxy 'localhost:9000' --files 'public' --no-notify",
     "lint:sass": "sass-lint -v -q",
     "lint": "eslint ./public/scripts/main.js"
   },
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/johngruen/dsb.git"
   },
   "author": "johngruen",
-  "license": "ISC",
+  "license": "MPL 2",
   "bugs": {
     "url": "https://github.com/johngruen/dead-simple-boilerplate/issues"
   },
